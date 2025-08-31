@@ -1,0 +1,147 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Siddartha Datta
+%-------------------------
+
+\documentclass[11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% --- tighter margins for 1 page
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- compact section titles
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+
+\pdfgentounicode=1
+
+% --- custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Large \scshape Siddartha Datta} \\ \vspace{2pt}
+  \normalsize \href{mailto:sid2002official@gmail.com}{{\faEnvelope \hspace{.02cm} sid2002official@gmail.com}} $|$ 
+  \href{https://www.linkedin.com/in/sidd1202/}{{\faLinkedin \hspace{.02cm} siddarthadatta}} $|$
+  {\faPhone \hspace{.02cm} +91-7002232871}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National Institute of Technology, Raipur}{}{Masters in Computer Applications}{July 2023 -- May 2026}
+  \resumeSubheading
+    {Pragjyotish College, Guwahati}{}{Bachelors in Computer Applications}{April 2019 -- March 2022}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Bright-Layers} $|$ \emph{React.js, TailwindCSS, Vercel, Cloudflare Workers, Resend}}{Jun 2025 -- Aug 2025}
+  \resumeItemListStart
+    \resumeItem{Built a responsive landing page from Figma designs using \textbf{React} and \textbf{TailwindCSS}.}
+    \resumeItem{Connected a serverless contact form with \textbf{Cloudflare Workers} and emails via \textbf{Resend}.}
+    \resumeItem{Ensured accessibility, responsiveness, and applied basic SEO best practices.}
+    \resumeItem{\href{https://thebrightlayers.com}{Live Demo (View)}} 
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{AI-Powered E-Learning Platform} \hfill \textit{Next.js, TailwindCSS, Gemini AI, PostgreSQL, Clerk}}{}
+\resumeItemListStart
+  \resumeItem{Created a web app for AI-driven course generation using \textbf{Next.js} and \textbf{Gemini AI}.}
+  \resumeItem{Implemented authentication with \textbf{Clerk} and database management via \textbf{Drizzle ORM}.}
+  \resumeItem{Deployed on \textbf{Vercel} with server-side rendering for smooth performance.}
+  \resumeItem{\href{https://gencourseai.tech}{Live Demo (View)}} 
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Bar \& Pub Showcase Website} \hfill \textit{Next.js, Framer Motion, TailwindCSS, Next/Image}}{}
+\resumeItemListStart
+  \resumeItem{Designed a mobile-first showcase site with interactive sections and animations.}
+  \resumeItem{Used \textbf{Framer Motion} and \textbf{Next/Image} for smooth transitions and image optimization.}
+  \resumeItem{\href{https://pub-website-eight.vercel.app}{Live Demo (View)}} 
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Recipe Manager Web App}  \hfill \textit{Node.js, Express, MongoDB, JWT}}{}
+\resumeItemListStart
+  \resumeItem{Built a CRUD app with JWT-secured authentication and role-based access.}
+  \resumeItem{Followed RESTful conventions for backend operations.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} C++, JavaScript, TypeScript \\
+    \textbf{Web Dev:} Next.js, React, Node.js, Express.js \\
+    \textbf{Frontend:} HTML, CSS, TailwindCSS, Material UI, ShadCN \\
+    \textbf{Backend/Auth:} PostgreSQL, MongoDB, JWT, Clerk, Drizzle ORM \\
+    \textbf{Tools \& DevOps:} Git, GitHub, Postman, CI/CD, Vercel, Cloudflare \\
+    \textbf{Core CS:} Data Structures, Algorithms, OOP, DBMS, Operating Systems
+  }}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeItemListStart
+  \resumeItem{\textbf{\faGoogle Google Cloud Arcade Champion:} Completed hands-on GCP labs via Cloud Skills Boost. \href{https://www.credly.com/users/siddartha-datta}{View on Credly}.}
+  \resumeItem{\textbf{\faCode Solved 600+ Coding Problems:} Practiced regularly on \href{https://leetcode.com/stormlite12}{LeetCode} and \href{https://codeforces.com/profile/SID_D}{Codeforces}.}
+  \resumeItem{\textbf{\faTerminal Postman Student Expert:} Earned the Postman Student Fundamentals API Expert certification. \href{https://badgr.com/public/assertions/f8mVHrdpReeUg4IjhsxAVg}{View on Badgr}.}
+\resumeItemListEnd
+
+\end{document}
